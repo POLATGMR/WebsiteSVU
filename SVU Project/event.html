@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title data-en="Summer Music Festival - City Events Guide" data-ar="مهرجان الموسيقى الصيفي - دليل فعاليات المدينة">مهرجان الموسيقى الصيفي - دليل فعاليات المدينة</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <meta name="description" content="مهرجان الموسيقى الصيفي - استمتع بأمسيات موسيقية رائعة مع أشهر الفرق المحلية والعالمية">
+    <meta name="keywords" content="مهرجان, موسيقى, صيفي, حفلة, فرق موسيقية">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-city me-2"></i>
+                <span data-en="City Events Guide" data-ar="دليل فعاليات المدينة">دليل فعاليات المدينة</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html" data-en="All Events" data-ar="جميع الفعاليات">جميع الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-en="About Us" data-ar="عن الدليل">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-en="Contact Us" data-ar="اتصل بنا">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="langToggle" class="btn btn-outline-primary ms-2" style="min-width: 80px;"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="event-header">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="fade-in" data-en="Summer Music Festival" data-ar="مهرجان الموسيقى الصيفي">مهرجان الموسيقى الصيفي</h1>
+                    <p class="fade-in" data-en="Enjoy wonderful musical evenings with the most famous local and international bands in a special summer atmosphere" data-ar="استمتع بأمسيات موسيقية رائعة مع أشهر الفرق المحلية والعالمية في أجواء صيفية مميزة">استمتع بأمسيات موسيقية رائعة مع أشهر الفرق المحلية والعالمية في أجواء صيفية مميزة</p>
+                    <div class="fade-in">
+                        <span class="badge badge-music fs-6 me-3" data-en="Music" data-ar="موسيقى">موسيقى</span>
+                        <span class="badge bg-success fs-6" data-en="Booking Available" data-ar="متاح للحجز">متاح للحجز</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="event-info fade-in">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong data-en="Date" data-ar="التاريخ">التاريخ</strong>
+                                    <br><span data-en="September 25-27, 2025" data-ar="25-27 سبتمبر 2025">25-27 سبتمبر 2025</span>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong data-en="Time" data-ar="الوقت">الوقت</strong>
+                                    <br><span data-en="6:00 PM - 11:00 PM" data-ar="6:00 مساءً - 11:00 مساءً">6:00 مساءً - 11:00 مساءً</span>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong data-en="Location" data-ar="المكان">المكان</strong>
+                                    <br><span data-en="Central City Park" data-ar="حديقة المدينة المركزية">حديقة المدينة المركزية</span>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-ticket-alt"></i>
+                                <div>
+                                    <strong data-en="Price" data-ar="السعر">السعر</strong>
+                                    <br><span data-en="Free" data-ar="مجاني">مجاني</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary btn-lg" onclick="addToCalendar('مهرجان الموسيقى الصيفي', '2025-09-25', 'حديقة المدينة المركزية')">
+                                <i class="fas fa-calendar-plus me-2"></i>
+                                <span data-en="Add to Calendar" data-ar="أضف للتقويم">أضف للتقويم</span>
+                            </button>
+                            <button class="btn btn-secondary btn-lg" onclick="openBookingModal('1')">
+                                <i class="fas fa-user-plus me-2"></i>
+                                <span data-en="Book Your Spot" data-ar="احجز مكانك">احجز مكانك</span>
+                            </button>
+                            <button class="btn btn-outline-primary" onclick="shareEvent('مهرجان الموسيقى الصيفي', window.location.href)">
+                                <i class="fas fa-share-alt me-2"></i>
+                                <span data-en="Share Event" data-ar="شارك الفعالية">شارك الفعالية</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <h3 class="card-title" data-en="Event Description" data-ar="وصف الفعالية">وصف الفعالية</h3>
+                            <p class="card-text" data-en="The Summer Music Festival returns for its fifth year to offer you an unforgettable musical experience in the heart of the city. The festival features a diverse group of local, Arab, and international bands who will perform live over three consecutive days." data-ar="يعود مهرجان الموسيقى الصيفي لعامه الخامس ليقدم لكم تجربة موسيقية لا تُنسى في قلب المدينة. يضم المهرجان مجموعة متنوعة من الفرق الموسيقية المحلية والعربية والعالمية التي ستقدم عروضاً حية على مدار ثلاثة أيام متتالية.">
+                                يعود مهرجان الموسيقى الصيفي لعامه الخامس ليقدم لكم تجربة موسيقية لا تُنسى في قلب المدينة. 
+                                يضم المهرجان مجموعة متنوعة من الفرق الموسيقية المحلية والعربية والعالمية التي ستقدم عروضاً 
+                                حية على مدار ثلاثة أيام متتالية.
+                            </p>
+                            <p class="card-text" data-en="Attendees will be able to enjoy various types of music including folk, jazz, rock, and classical music. The festival will also include music workshops for children and an exhibition of traditional musical instruments." data-ar="سيتمكن الحضور من الاستمتاع بأنواع مختلفة من الموسيقى بما في ذلك الموسيقى الشعبية، والجاز، والروك، والموسيقى الكلاسيكية. كما سيتضمن المهرجان ورش عمل موسيقية للأطفال ومعرضاً للآلات الموسيقية التقليدية.">
+                                سيتمكن الحضور من الاستمتاع بأنواع مختلفة من الموسيقى بما في ذلك الموسيقى الشعبية، 
+                                والجاز، والروك، والموسيقى الكلاسيكية. كما سيتضمن المهرجان ورش عمل موسيقية للأطفال 
+                                ومعرضاً للآلات الموسيقية التقليدية.
+                            </p>
+                            <p class="card-text" data-en="Entry is free for all, and comfortable seating areas and food and beverage stalls will be provided. We recommend arriving early to secure the best spots." data-ar="الدخول مجاني للجميع، وسيتم توفير مناطق جلوس مريحة وأكشاك للطعام والمشروبات. ننصح بالحضور مبكراً لضمان الحصول على أفضل الأماكن.">
+                                الدخول مجاني للجميع، وسيتم توفير مناطق جلوس مريحة وأكشاك للطعام والمشروبات. 
+                                ننصح بالحضور مبكراً لضمان الحصول على أفضل الأماكن.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <h3 class="card-title" data-en="Event Program" data-ar="برنامج الفعالية">برنامج الفعالية</h3>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5 data-en="Day 1 - Sep 25" data-ar="اليوم الأول - 25 سبتمبر">اليوم الأول - 25 سبتمبر</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong data-en="6:00 PM" data-ar="6:00 مساءً">6:00 مساءً</strong> - <span data-en="Festival Opening" data-ar="افتتاح المهرجان">افتتاح المهرجان</span></li>
+                                        <li><strong data-en="6:30 PM" data-ar="6:30 مساءً">6:30 مساءً</strong> - <span data-en="Local Stars Band" data-ar="فرقة النجوم المحلية">فرقة النجوم المحلية</span></li>
+                                        <li><strong data-en="8:00 PM" data-ar="8:00 مساءً">8:00 مساءً</strong> - <span data-en="Classic Jazz Show" data-ar="عرض الجاز الكلاسيكي">عرض الجاز الكلاسيكي</span></li>
+                                        <li><strong data-en="9:30 PM" data-ar="9:30 مساءً">9:30 مساءً</strong> - <span data-en="Arabic Rock Band" data-ar="فرقة الروك العربية">فرقة الروك العربية</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 data-en="Day 2 - Sep 26" data-ar="اليوم الثاني - 26 سبتمبر">اليوم الثاني - 26 سبتمبر</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong data-en="6:00 PM" data-ar="6:00 مساءً">6:00 مساءً</strong> - <span data-en="Kids Music Workshop" data-ar="ورشة موسيقية للأطفال">ورشة موسيقية للأطفال</span></li>
+                                        <li><strong data-en="7:00 PM" data-ar="7:00 مساءً">7:00 مساءً</strong> - <span data-en="Symphony Orchestra" data-ar="الفرقة السيمفونية">الفرقة السيمفونية</span></li>
+                                        <li><strong data-en="8:30 PM" data-ar="8:30 مساءً">8:30 مساءً</strong> - <span data-en="Folk Music Night" data-ar="أمسية الموسيقى الشعبية">أمسية الموسيقى الشعبية</span></li>
+                                        <li><strong data-en="10:00 PM" data-ar="10:00 مساءً">10:00 مساءً</strong> - <span data-en="Fireworks Show" data-ar="عرض الألعاب النارية">عرض الألعاب النارية</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 data-en="Day 3 - Sep 27" data-ar="اليوم الثالث - 27 سبتمبر">اليوم الثالث - 27 سبتمبر</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong data-en="6:00 PM" data-ar="6:00 مساءً">6:00 مساءً</strong> - <span data-en="Traditional Instruments Expo" data-ar="معرض الآلات التقليدية">معرض الآلات التقليدية</span></li>
+                                        <li><strong data-en="7:00 PM" data-ar="7:00 مساءً">7:00 مساءً</strong> - <span data-en="World Fusion Band" data-ar="فرقة الفيوجن العالمية">فرقة الفيوجن العالمية</span></li>
+                                        <li><strong data-en="8:30 PM" data-ar="8:30 مساءً">8:30 مساءً</strong> - <span data-en="Closing Ceremony" data-ar="الحفل الختامي">الحفل الختامي</span></li>
+                                        <li><strong data-en="10:30 PM" data-ar="10:30 مساءً">10:30 مساءً</strong> - <span data-en="Festival Closing" data-ar="إغلاق المهرجان">إغلاق المهرجان</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card fade-in">
+                        <div class="card-body">
+                            <h3 class="card-title" data-en="Photo Gallery" data-ar="معرض الصور">معرض الصور</h3>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <img src="assets/img/music-festival.jpg" class="img-fluid rounded" alt="مهرجان الموسيقى" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <img src="assets/img/family-festival.jpg" class="img-fluid rounded" alt="جمهور المهرجان" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <img src="assets/img/sports-event.jpg" class="img-fluid rounded" alt="المسرح الرئيسي" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Location" data-ar="الموقع">الموقع</h5>
+                            
+                            <p class="card-text">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                <span data-en="Central City Park" data-ar="حديقة المدينة المركزية">حديقة المدينة المركزية</span><br>
+                                <span data-en="Damascus, Althawra Street" data-ar="شارع الثورة،دمشق">شارع الثورة،دمشق</span>
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-directions me-2"></i>
+                                <span data-en="Get Directions" data-ar="احصل على الاتجاهات">احصل على الاتجاهات</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Organizer" data-ar="المنظم">المنظم</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="fas fa-music text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0" data-en="Musical Arts Foundation" data-ar="مؤسسة الفنون الموسيقية">مؤسسة الفنون الموسيقية</h6>
+                                    <small class="text-muted" data-en="Event Organizer" data-ar="منظم الفعالية">منظم الفعالية</small>
+                                </div>
+                            </div>
+                            <p class="card-text small" data-en="A foundation specialized in organizing musical and cultural events in the city for over 10 years." data-ar="مؤسسة متخصصة في تنظيم الفعاليات الموسيقية والثقافية في المدينة منذ أكثر من 10 سنوات.">
+                                مؤسسة متخصصة في تنظيم الفعاليات الموسيقية والثقافية في المدينة منذ أكثر من 10 سنوات.
+                            </p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm" data-en="Contact Organizer" data-ar="تواصل مع المنظم">تواصل مع المنظم</a>
+                        </div>
+                    </div>
+
+                    <div class="card fade-in">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Event Stats" data-ar="إحصائيات الفعالية">إحصائيات الفعالية</h5>
+                            <div class="row text-center">
+                                <div class="col-6 mb-3">
+                                    <div class="h4 text-primary mb-1">2,500</div>
+                                    <small class="text-muted" data-en="Expected Attendees" data-ar="مشارك متوقع">مشارك متوقع</small>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="h4 text-primary mb-1">15</div>
+                                    <small class="text-muted" data-en="Musical Bands" data-ar="فرقة موسيقية">فرقة موسيقية</small>
+                                </div>
+                                <div class="col-6">
+                                    <div class="h4 text-primary mb-1">3</div>
+                                    <small class="text-muted" data-en="Days" data-ar="أيام">أيام</small>
+                                </div>
+                                <div class="col-6">
+                                    <div class="h4 text-primary mb-1">5</div>
+                                    <small class="text-muted" data-en="Stages" data-ar="مسارح">مسارح</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in" data-en="Related Events" data-ar="فعاليات ذات صلة">فعاليات ذات صلة</h2>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="card">
+                        <img src="assets/img/food-festival.jpg" class="card-img-top" alt="مهرجان الطعام العالمي">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="World Food Festival" data-ar="مهرجان الطعام العالمي">مهرجان الطعام العالمي</h5>
+                            <p class="card-text" data-en="Taste the most delicious dishes from around the world" data-ar="تذوق أشهى الأطباق من مختلف أنحاء العالم">تذوق أشهى الأطباق من مختلف أنحاء العالم</video>
+                            <div class="mb-3">
+                                <span class="badge badge-food" data-en="Food" data-ar="طعام">طعام</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted" data-en="Sep 22-24" data-ar="22-24 سبتمبر">22-24 سبتمبر</small>
+                                <a href="event.html?id=3" class="btn btn-primary btn-sm" data-en="Details" data-ar="التفاصيل">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="card">
+                        <img src="assets/img/family-festival.jpg" class="card-img-top" alt="يوم العائلة في الحديقة">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Family Day in the Park" data-ar="يوم العائلة في الحديقة">يوم العائلة في الحديقة</h5>
+                            <p class="card-text" data-en="A day full of entertainment activities for families" data-ar="يوم مليء بالأنشطة الترفيهية للعائلات">يوم مليء بالأنشطة الترفيهية للعائلات</p>
+                            <div class="mb-3">
+                                <span class="badge badge-family" data-en="Family" data-ar="عائلي">عائلي</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted" data-en="Sep 29" data-ar="29 سبتمبر">29 سبتمبر</small>
+                                <a href="event.html?id=5" class="btn btn-primary btn-sm" data-en="Details" data-ar="التفاصيل">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="card">
+                        <img src="assets/img/music-festival.jpg" class="card-img-top" alt="أمسية شعرية">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Poetry Night" data-ar="أمسية شعرية">أمسية شعرية</h5>
+                            <p class="card-text" data-en="A poetry night with a selection of local poets" data-ar="أمسية شعرية مع نخبة من الشعراء المحليين">أمسية شعرية مع نخبة من الشعراء المحليين</p>
+                            <div class="mb-3">
+                                <span class="badge badge-culture" data-en="Culture" data-ar="ثقافة">ثقافة</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted" data-en="Sep 30" data-ar="30 سبتمبر">30 سبتمبر</small>
+                                <a href="event.html?id=8" class="btn btn-primary btn-sm" data-en="Details" data-ar="التفاصيل">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel" data-en="Book Your Spot at the Event" data-ar="حجز مكان في الفعالية">حجز مكان في الفعالية</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="bookingName" class="form-label" data-en="Full Name" data-ar="الاسم الكامل">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="bookingName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingEmail" class="form-label" data-en="Email Address" data-ar="البريد الإلكتروني">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="bookingEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingPhone" class="form-label" data-en="Phone Number" data-ar="رقم الهاتف">رقم الهاتف</label>
+                            <input type="tel" class="form-control" id="bookingPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="attendeeCount" class="form-label" data-en="Number of Attendees" data-ar="عدد الحضور">عدد الحضور</label>
+                            <select class="form-select" id="attendeeCount" required>
+                                <option value="" data-en="Choose number of attendees" data-ar="اختر عدد الحضور">اختر عدد الحضور</option>
+                                <option value="1" data-en="1 Person" data-ar="شخص واحد">شخص واحد</option>
+                                <option value="2" data-en="2 People" data-ar="شخصان">شخصان</option>
+                                <option value="3" data-en="3 People" data-ar="3 أشخاص">3 أشخاص</option>
+                                <option value="4" data-en="4 People" data-ar="4 أشخاص">4 أشخاص</option>
+                                <option value="5+" data-en="5+ People" data-ar="5 أشخاص أو أكثر">5 أشخاص أو أكثر</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialRequests" class="form-label" data-en="Special Requests (Optional)" data-ar="طلبات خاصة (اختياري)">طلبات خاصة (اختياري)</label>
+                            <textarea class="form-control" id="specialRequests" rows="3" 
+                                      placeholder="Any special requests or needs..."
+                                      data-en-placeholder="Any special requests or needs..."
+                                      data-ar-placeholder="أي طلبات أو احتياجات خاصة..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-en="Cancel" data-ar="إلغاء">إلغاء</button>
+                    <button type="submit" form="bookingForm" class="btn btn-primary" data-en="Confirm Booking" data-ar="تأكيد الحجز">تأكيد الحجز</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel" data-en="Photo Gallery" data-ar="معرض الصور">معرض الصور</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/img/music-festival.jpg" class="img-fluid" alt="صورة الفعالية">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 data-en="City Events Guide" data-ar="دليل فعاليات المدينة">دليل فعاليات المدينة</h5>
+                    <p data-en="Your comprehensive guide to discovering the best events and activities in your city. We help you find the right experiences for you and your family." data-ar="دليلك الشامل لاكتشاف أفضل الفعاليات والأنشطة في مدينتك. نساعدك في العثور على التجارب المناسبة لك ولعائلتك.">دليلك الشامل لاكتشاف أفضل الفعاليات والأنشطة في مدينتك. نساعدك في العثور على التجارب المناسبة لك ولعائلتك.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 data-en="Quick Links" data-ar="روابط سريعة">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a></li>
+                        <li><a href="events.html" data-en="Events" data-ar="الفعاليات">الفعاليات</a></li>
+                        <li><a href="about.html" data-en="About Us" data-ar="عن الدليل">عن الدليل</a></li>
+                        <li><a href="contact.html" data-en="Contact Us" data-ar="اتصل بنا">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 data-en="Categories" data-ar="الفئات">الفئات</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="events.html?category=music" data-en="Music" data-ar="موسيقى">موسيقى</a></li>
+                        <li><a href="events.html?category=culture" data-en="Culture" data-ar="ثقافة">ثقافة</a></li>
+                        <li><a href="events.html?category=sports" data-en="Sports" data-ar="رياضة">رياضة</a></li>
+                        <li><a href="events.html?category=family" data-en="Family" data-ar="عائلي">عائلي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@cityevents.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +963 11 123 4567</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> <span data-en="Syrian Arab Republic , Damascus" data-ar="دمشق , الجمهورية العربية السورية">دمشق , الجمهورية العربية السورية</span></p>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-en="&copy; 2025 City Events Guide. All rights reserved." data-ar="&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3" data-en="Privacy Policy" data-ar="سياسة الخصوصية">سياسة الخصوصية</a>
+                    <a href="#" class="text-light" data-en="Terms of Use" data-ar="شروط الاستخدام">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Initialize booking form handler
+        document.addEventListener('DOMContentLoaded', function() {
+            // This function is just an example, as in your original file.
+            // The real logic would be inside 'main.js' or another file.
+            const bookingForm = document.getElementById('bookingForm');
+            if(bookingForm) {
+                bookingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    console.log('Booking form submitted (example).');
+                    // Add real submission logic here
+                    var myModalEl = document.getElementById('bookingModal');
+                    var modal = bootstrap.Modal.getInstance(myModalEl);
+                    modal.hide();
+                    alert('Booking confirmed!');
+                });
+            }
+        });
+    </script>
+</body>
+</html>                

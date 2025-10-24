@@ -1,0 +1,274 @@
+/*
+ * BWP401 - City Events Guide Custom Stylesheet
+ * This file WORKS WITH Bootstrap 5, as required by the homework.
+ */
+
+/* --- 1. General Setup & Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+:root {
+    /* Define a color palette as required */
+    --bs-primary: #0d6efd; /* Default Bootstrap Blue */
+    --bs-secondary: #6c757d;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    
+    /* Set the homework's required font as the default [cite: 67] */
+    --bs-font-sans-serif: 'Cairo', sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: #f4f7f6; /* Neutral background */
+    color: #333;
+}
+
+/* --- 2. Navbar --- */
+/* We just add to Bootstrap's .navbar, not replace it */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--bs-primary);
+}
+
+.navbar-nav .nav-link {
+    color: #555;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 700;
+    color: var(--bs-primary);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+
+/* --- 3. Hero & Page Headers --- */
+.hero {
+    /* This path assumes your images are in 'assets/img/' */
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.8), rgba(50, 150, 255, 0.7)), url('../img/city-skyline.jpg') center center/cover no-repeat;
+    color: #ffffff;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.event-header {
+    /* This path assumes your images are in 'assets/img/' */
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.8), rgba(50, 150, 255, 0.7)), url('../img/city-skyline.jpg') center center/cover no-repeat;
+    color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1, .event-header h1 {
+    font-weight: 700;
+}
+
+
+/* --- 4. Sections & Titles --- */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* Adds a small underline to section titles */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--bs-primary);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* --- 5. Event Cards --- */
+/* We add to Bootstrap's .card class [cite: 29] */
+.event-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; 
+    padding: 2px;
+    margin: 5px;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.event-card .card-img-top {
+    height: 200px;
+    object-fit: cover; 
+}
+
+.event-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card .card-text {
+    flex-grow: 1; 
+}
+
+/* --- 6. Category Badges (Vibrant Colors Requirement) --- */
+/* We add to Bootstrap's .badge class  */
+.badge {
+    padding: 0.6em 1em;
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin: 0.25rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    color: white !important; /* Ensures text is readable */
+}
+
+.badge:hover {
+    opacity: 0.85;
+}
+
+/* FIX for Bootstrap 5: Make selector more specific */
+.badge.badge-music { background-color: #dc3545; }
+.badge.badge-culture { background-color: #fd7e14; }
+.badge.badge-sports { background-color: #198754; }
+.badge.badge-family { background-color: #0dcaf0; }
+.badge.badge-food { background-color: #ffc107; color: #333 !important; } 
+.badge.badge-arts { background-color: #6f42c1; }
+
+
+/* For the category links on index.html */
+a.badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- 7. Filter Bar (events.html) --- */
+.filter-bar {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+/* --- 8. Event Detail Page (event.html & event-*.html) --- */
+.event-info {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+}
+
+.event-meta .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; 
+}
+
+.event-meta .meta-item i {
+    font-size: 1.5rem;
+    color: var(--bs-primary);
+}
+
+/* Card for event-1, 2, 3... */
+.event-details-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* --- 9. Contact Page --- */
+.contact-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* --- 10. Footer --- */
+.footer {
+    background-color: var(--bs-dark);
+    color: #adb5bd; 
+    padding: 4rem 0 2rem;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 0.75rem;
+}
+
+.footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-inline-end: 0.5rem; 
+}
+
+.footer .social-links a:hover {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #ffffff;
+}
+
+
+/* --- 11. Animations --- */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

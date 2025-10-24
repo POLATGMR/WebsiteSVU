@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title data-en="Contact Us - City Events Guide" data-ar="اتصل بنا - دليل فعاليات المدينة">اتصل بنا - دليل فعاليات المدينة</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <meta name="description" content="تواصل مع فريق دليل فعاليات المدينة - نحن هنا للإجابة على استفساراتكم ومساعدتكم">
+    <meta name="keywords" content="اتصل بنا, تواصل, استفسارات, دعم, خدمة العملاء">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-city me-2"></i>
+                <span data-en="City Events Guide" data-ar="دليل فعاليات المدينة">دليل فعاليات المدينة</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html" data-en="All Events" data-ar="جميع الفعاليات">جميع الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-en="About Us" data-ar="عن الدليل">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html" data-en="Contact Us" data-ar="اتصل بنا">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="langToggle" class="btn btn-outline-primary ms-2" style="min-width: 80px;"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="fade-in" data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</h1>
+                    <p class="fade-in" data-en="We are here to answer your inquiries and assist you with everything related to events" data-ar="نحن هنا للإجابة على استفساراتكم ومساعدتكم في كل ما يتعلق بالفعاليات">نحن هنا للإجابة على استفساراتكم ومساعدتكم في كل ما يتعلق بالفعاليات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="contact-form fade-in">
+                        <h3 class="mb-4" data-en="Send us a message" data-ar="أرسل لنا رسالة">أرسل لنا رسالة</h3>
+                        
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label" data-en="Full Name *" data-ar="الاسم الكامل *">الاسم الكامل *</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label" data-en="Email Address *" data-ar="البريد الإلكتروني *">البريد الإلكتروني *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone" class="form-label" data-en="Phone Number" data-ar="رقم الهاتف">رقم الهاتف</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone">
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label" data-en="Subject *" data-ar="الموضوع *">الموضوع *</label>
+                                        <select class="form-select" id="subject" name="subject" required>
+                                            <option value="" data-en="Choose subject" data-ar="اختر الموضوع">اختر الموضوع</option>
+                                            <option value="event-submission" data-en="Submit a new event" data-ar="إضافة فعالية جديدة">إضافة فعالية جديدة</option>
+                                            <option value="partnership" data-en="Partnership or cooperation" data-ar="شراكة أو تعاون">شراكة أو تعاون</option>
+                                            <option value="technical-support" data-en="Technical support" data-ar="دعم تقني">دعم تقني</option>
+                                            <option value="feedback" data-en="Feedback and suggestions" data-ar="ملاحظات واقتراحات">ملاحظات واقتراحات</option>
+                                            <option value="complaint" data-en="Complaint" data-ar="شكوى">شكوى</option>
+                                            <option value="other" data-en="Other" data-ar="أخرى">أخرى</option>
+                                        </select>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label" data-en="Message *" data-ar="الرسالة *">الرسالة *</label>
+                                <textarea class="form-control" id="message" name="message" rows="6" 
+                                          placeholder="اكتب رسالتك هنا..." 
+                                          data-en-placeholder="Write your message here..."
+                                          data-ar-placeholder="اكتب رسالتك هنا..."
+                                          required></textarea>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                    <label class="form-check-label" for="privacy">
+                                        <span data-en="I agree to the" data-ar="أوافق على">أوافق على</span>
+                                        <a href="#" class="text-primary" data-en="Privacy Policy" data-ar="سياسة الخصوصية">سياسة الخصوصية</a>
+                                        <span data-en="and" data-ar="و">و</span>
+                                        <a href="#" class="text-primary" data-en="Terms of Use" data-ar="شروط الاستخدام">شروط الاستخدام</a> *
+                                    </label>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    <span data-en="Send Message" data-ar="إرسال الرسالة">إرسال الرسالة</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Contact Information" data-ar="معلومات التواصل">معلومات التواصل</h5>
+                            
+                            <div class="contact-item mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-envelope text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1" data-en="Email" data-ar="البريد الإلكتروني">البريد الإلكتروني</h6>
+                                        <p class="mb-0 text-muted">info@cityevents.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-phone text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1" data-en="Phone" data-ar="الهاتف">الهاتف</h6>
+                                        <p class="mb-0 text-muted">+963 11 123 4567</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon me-3">
+                                        <i class="fab fa-whatsapp text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1" data-en="WhatsApp" data-ar="واتساب">واتساب</h6>
+                                        <p class="mb-0 text-muted">+963 50 123 4567</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1" data-en="Address" data-ar="العنوان">العنوان</h6>
+                                        <p class="mb-0 text-muted" data-en="Souq Albahsa , near Victoria Bridge , Damascus, Syrian Arab Republic" data-ar="سوق البحصة, قرب جسر فيكتوريا, دمشق , الجمهورية العربية السورية">سوق البحصة, قرب جسر فيكتوريا, دمشق , الجمهورية العربية السورية</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4 fade-in">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Working Hours" data-ar="ساعات العمل">ساعات العمل</h5>
+                            
+                            <div class="working-hours">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span data-en="Sunday - Thursday" data-ar="الأحد - الخميس">الأحد - الخميس</span>
+                                    <span class="text-muted" data-en="9:00 AM - 6:00 PM" data-ar="9:00 ص - 6:00 م">9:00 ص - 6:00 م</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span data-en="Friday" data-ar="الجمعة">الجمعة</span>
+                                    <span class="text-muted" data-en="2:00 PM - 6:00 PM" data-ar="2:00 م - 6:00 م">2:00 م - 6:00 م</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span data-en="Saturday" data-ar="السبت">السبت</span>
+                                    <span class="text-muted" data-en="Closed" data-ar="مغلق">مغلق</span>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            
+                            <div class="text-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>
+                                    <span data-en="We respond to messages within 24 hours" data-ar="نرد على الرسائل خلال 24 ساعة">نرد على الرسائل خلال 24 ساعة</span>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-body">
+                            <h5 class="card-title" data-en="Follow Us" data-ar="تابعنا على">تابعنا على</h5>
+                            
+                            <div class="social-media-links">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                                    <i class="fab fa-facebook-f me-2"></i>
+                                    <span data-en="Facebook" data-ar="فيسبوك">فيسبوك</span>
+                                </a>
+                                <a href="#" class="btn btn-outline-info btn-sm me-2 mb-2">
+                                    <i class="fab fa-twitter me-2"></i>
+                                    <span data-en="Twitter" data-ar="تويتر">تويتر</span>
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm me-2 mb-2">
+                                    <i class="fab fa-instagram me-2"></i>
+                                    <span data-en="Instagram" data-ar="إنستغرام">إنستغرام</span>
+                                </a>
+                                <a href="#" class="btn btn-outline-dark btn-sm me-2 mb-2">
+                                    <i class="fab fa-tiktok me-2"></i>
+                                    <span data-en="TikTok" data-ar="تيك توك">تيك توك</span>
+                                </a>
+                                <a href="#" class="btn btn-outline-danger btn-sm me-2 mb-2">
+                                    <i class="fab fa-youtube me-2"></i>
+                                    <span data-en="YouTube" data-ar="يوتيوب">يوتيوب</span>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm mb-2">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    <span data-en="LinkedIn" data-ar="لينكد إن">لينكد إن</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in" data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">الأسئلة الشائعة</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion fade-in" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" data-en="How can I add a new event?" data-ar="كيف يمكنني إضافة فعالية جديدة؟">
+                                    كيف يمكنني إضافة فعالية جديدة؟
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-en="You can add a new event by contacting us through the form above and selecting 'Submit a new event' as the subject. Our team will review your request and contact you within 24-48 hours." data-ar="يمكنك إضافة فعالية جديدة عن طريق التواصل معنا من خلال نموذج الاتصال أعلاه واختيار 'إضافة فعالية جديدة' كموضوع. سيقوم فريقنا بمراجعة طلبك والتواصل معك خلال 24-48 ساعة.">
+                                    يمكنك إضافة فعالية جديدة عن طريق التواصل معنا من خلال نموذج الاتصال أعلاه واختيار "إضافة فعالية جديدة" 
+                                    كموضوع. سيقوم فريقنا بمراجعة طلبك والتواصل معك خلال 24-48 ساعة.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" data-en="Is the service free?" data-ar="هل الخدمة مجانية؟">
+                                    هل الخدمة مجانية؟
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-en="Yes, browsing events is completely free for users. We also offer free event submission for charities and community initiatives." data-ar="نعم، خدمة تصفح الفعاليات مجانية تماماً للمستخدمين. كما نقدم خدمة إضافة الفعاليات مجاناً للجمعيات الخيرية والمبادرات المجتمعية.">
+                                    نعم، خدمة تصفح الفعاليات مجانية تماماً للمستخدمين. كما نقدم خدمة إضافة الفعاليات مجاناً 
+                                    للجمعيات الخيرية والمبادرات المجتمعية.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" data-en="How can I report a problem with an event?" data-ar="كيف يمكنني الإبلاغ عن مشكلة في فعالية؟">
+                                    كيف يمكنني الإبلاغ عن مشكلة في فعالية؟
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-en="If you encounter any problem with an event, please contact us immediately via the contact form and select 'Complaint' as the subject. We will handle the matter as quickly as possible." data-ar="إذا واجهت أي مشكلة مع إحدى الفعاليات، يرجى التواصل معنا فوراً عبر نموذج الاتصال واختيار 'شكوى' كموضوع. سنتعامل مع الأمر بأقصى سرعة ممكنة.">
+                                    إذا واجهت أي مشكلة مع إحدى الفعاليات، يرجى التواصل معنا فوراً عبر نموذج الاتصال 
+                                    واختيار "شكوى" كموضوع. سنتعامل مع الأمر بأقصى سرعة ممكنة.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" data-en="Can I suggest improvements for the site?" data-ar="هل يمكنني اقتراح تحسينات للموقع؟">
+                                    هل يمكنني اقتراح تحسينات للموقع؟
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" data-en="Of course! We welcome all suggestions and feedback. Please use the contact form and select 'Feedback and suggestions' as the subject, and we will take your suggestion into consideration." data-ar="بالطبع! نحن نرحب بجميع الاقتراحات والملاحظات. يرجى استخدام نموذج الاتصال واختيار 'ملاحظات واقتراحات' كموضوع، وسنأخذ اقتراحك بعين الاعتبار.">
+                                    بالطبع! نحن نرحب بجميع الاقتراحات والملاحظات. يرجى استخدام نموذج الاتصال 
+                                    واختيار "ملاحظات واقتراحات" كموضوع، وسنأخذ اقتراحك بعين الاعتبار.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-en="Our Location" data-ar="موقعنا">موقعنا</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10 fade-in">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div style="height: 400px; background: linear-gradient(135deg, #f8fafc, #e2e8f0); display: flex; align-items: center; justify-content: center; border-radius: 0.5rem;">
+                                <div class="text-center">
+                                    <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                                    <h5 data-en="Location Map" data-ar="خريطة الموقع">خريطة الموقع</h5>
+                                    <p class="text-muted" data-en="Souq Al Bahsa, Damascus" data-ar="سوق البحصة, دمشق">سوق البحصة, دمشق</p>
+                                    <a href="https://maps.google.com" target="_blank" class="btn btn-primary">
+                                        <i class="fas fa-external-link-alt me-2"></i>
+                                        <span data-en="Open in Google Maps" data-ar="فتح في خرائط جوجل">فتح في خرائط جوجل</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 data-en="City Events Guide" data-ar="دليل فعاليات المدينة">دليل فعاليات المدينة</h5>
+                    <p data-en="Your comprehensive guide to discovering the best events and activities in your city. We help you find the right experiences for you and your family." data-ar="دليلك الشامل لاكتشاف أفضل الفعاليات والأنشطة في مدينتك. نساعدك في العثور على التجارب المناسبة لك ولعائلتك.">دليلك الشامل لاكتشاف أفضل الفعاليات والأنشطة في مدينتك. نساعدك في العثور على التجارب المناسبة لك ولعائلتك.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 data-en="Quick Links" data-ar="روابط سريعة">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">الرئيسية</a></li>
+                        <li><a href="events.html" data-en="Events" data-ar="الفعاليات">الفعاليات</a></li>
+                        <li><a href="about.html" data-en="About Us" data-ar="عن الدليل">عن الدليل</a></li>
+                        <li><a href="contact.html" data-en="Contact Us" data-ar="اتصل بنا">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 data-en="Categories" data-ar="الفئات">الفئات</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="events.html?category=music" data-en="Music" data-ar="موسيقى">موسيقى</a></li>
+                        <li><a href="events.html?category=culture" data-en="Culture" data-ar="ثقافة">ثقافة</a></li>
+                        <li><a href="events.html?category=sports" data-en="Sports" data-ar="رياضة">رياضة</a></li>
+                        <li><a href="events.html?category=family" data-en="Family" data-ar="عائلي">عائلي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@cityevents.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +963 11 123 4567</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> <span data-en="Syrian Arab Republic , Damascus" data-ar="دمشق , الجمهورية العربية السورية">دمشق , الجمهورية العربية السورية</span></p>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" data-en="&copy; 2025 City Events Guide. All rights reserved." data-ar="&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3" data-en="Privacy Policy" data-ar="سياسة الخصوصية">سياسة الخصوصية</a>
+                    <a href="#" class="text-light" data-en="Terms of Use" data-ar="شروط الاستخدام">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
